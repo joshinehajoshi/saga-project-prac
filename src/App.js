@@ -1,5 +1,5 @@
 import './App.css';
-import {addToCart} from './redux/action';
+import {addToCart, removeToCart} from './redux/action';
 import {useDispatch} from 'react-redux';
 
 function App() {
@@ -12,10 +12,15 @@ function App() {
     color: "black"
   }
 
+  const productRemoved = {
+    data: "Removed"
+  }
+
 
   return (
     <div className="App">
       <button onClick={() => {dispatch(addToCart(product))}}>Add To Cart</button>
+      <button onClick={() => {dispatch(removeToCart(productRemoved))}}>Remove To Cart</button>
     </div>
   );
 }
