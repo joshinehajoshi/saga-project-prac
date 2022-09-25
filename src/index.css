@@ -11,3 +11,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.cart-div {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  background-color: #494747;
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 1rem;
+}
